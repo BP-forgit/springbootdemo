@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyForPosting</title>
+    <link type="text/css" rel="stylesheet" href="css/RemoveAndAddPostings.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-image: url(images/background.jpg);" style="background-repeat: no-repeat;" style="background-size: cover;">
+    <header>
+        <img src="images/FBLA.png" alt="" id="logo">
+        <nav class="navigation">
+                <a th:href="@{/index}">Home</a></li>
+                <a th:href="@{/RemoveAndAddPostings}">Submit a Job</a>
+                <a th:href="@{/ApprovedPostings}">View current jobs</a>
+                <a th:href="@{/Donations}">DONATE</a>
+        </header>
+    <div class = "AddorRemove"> 
+        <div class="title">
+            <h3 class="title-of-job">
+                Submit your job
+            </h3>
+    </div>
+        <div class="signup-box">
+                <form id="form" method="post" enctype="multipart/form-data">
+                    <input type="text" id = "job-title" placeholder="Job Name" required class="input-box">
+                    <input type="text" id = "job-det" placeholder="Job Description" required class="input-box">
+                    <input type="file" placeholder="Image" name="image" id="job-image" class="input-box" accept="image/*">
+                    <input type="text" id = "available-pos" placeholder="Number of Available Positions" required class="input-box">
+                    <button type="submit" id="ButtonSubmit">SUBMIT<span></span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/RemoveAndAddPostings.js"></script>
+    <script th:inline = "javascript"> var ApprovedPostingsURL = [[@{/ApprovedPostings}]]; </script>
+    <script th:inline = "javascript"> var ApplyForPostingURL = [[@{/ApplyForPosting}]]; </script>
+</html>

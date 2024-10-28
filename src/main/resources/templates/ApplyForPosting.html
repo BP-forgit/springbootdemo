@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyForPosting</title>
+    <link type="text/css" rel="stylesheet" href="css/ApplyForPosting.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-image: url(images/analyticsphoto.jpeg);" style="background-repeat: no-repeat;" style="background-size: cover;">
+    <header>
+        <img src="images/FBLA.png" alt="" id="logo">
+        <nav class="navigation">
+                <a th:href="@{/index}">Home</a></li>
+                <a th:href="@{/RemoveAndAddPostings}">Submit a Job</a>
+                <a th:href="@{/ApprovedPostings}">View current jobs</a>
+                <a th:href="@{/Donations}">DONATE</a>
+        </header>
+    <div class="Postings">
+        <div class="posting-box">
+            <div class="title" id="selectedJobTitle"></div>
+            <div class="job-points" id="selectedJobPoints"></div>
+            <div class="available-positions" id="selectedJobPositions"></div>
+        </div>
+        
+        <div class="signup-box">
+            <form class="left" id="form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="input-box" placeholder="Enter your email">
+                <label for="Name">Name:</label>
+                <input type="Name" id="Name" class="input-box" placeholder="Enter your name">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/ApplyForPostings.js"></script>
+    <script type="text/javascript" src="js/RemoveAndAddPostings.js"></script>
+    <script th:inline = "javascript"> var HomeURL = [[@{/index}]]; </script>
+</body>
+    

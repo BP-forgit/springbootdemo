@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved Postings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/ApprovedPostings.css">
+</head>
+<body style="background-image: url(images/submitjobphoto.webp);" style="background-repeat: no-repeat;" style="background-size: cover;">
+    <header>
+        <img src="images/FBLA.png" alt="" id="logo">
+        <nav class="navigation">
+                <a th:href="@{/index}">Home</a></li>
+                <a th:href="@{/RemoveAndAddPostings}">Submit a Job</a>
+                <a th:href="@{/ApprovedPostings}">View current jobs</a>
+                <a th:href="@{/Donations}">DONATE</a>
+        </header>
+    <div class="jobs-container">
+        <h2>5 Jobs</h2>
+        <div class="jobs">
+            <div class="job">
+                <img src="images/Image1.jpg" alt="">
+                <h3 class="title-of-job">
+                    Sales Support
+                </h3>
+                <div class="job-details">
+                    Sales Support works to help with the management and distribution of our sales
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="Sales Support" moreinfo-details="Sales Support works to help with the management and distribution of our sales" moreinfo-positions="2">More info</a>
+                <span class="available-positions">2 positions open</span>
+            </div>
+
+            <div class="job">
+                <img src="images/Techlogo.png" alt="">
+                <h3 class="title-of-job">
+                    Technical Support
+                </h3>
+                <div class="job-details">
+                    Technical support manages tech desk calls, repairs electronics and manages device inventory
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="Technical Support" moreinfo-details="Technical support manages tech desk calls, repairs electronics and manages device inventory" moreinfo-positions="1">More info</a>
+                <span class="available-positions">1 positions open</span>
+            </div>
+
+            <div class="job">
+                <img src="images/Manager.png" alt="">
+                <h3 class="title-of-job">
+                    Divisions Manager
+                </h3>
+                <div class="job-details">
+                    As a division manager you will take leadership in all 4 divisions of the company, lead others below you and take on high end assignments
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="Divisions Manager" moreinfo-details="Technical support manages tech desk calls, repairs electronics and manages device inventory" moreinfo-positions="1">More info</a>
+                <span class="available-positions">2 positions open</span>
+            </div>
+
+            <div class="job">
+                <img src="images/Design.png" alt="">
+                <h3 class="title-of-job">
+                    Visual Design Specialist
+                </h3>
+                <div class="job-details">
+                   Visual design specialists design any visuals and digital designs needed
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button"  moreinfo-title="Visual Design Specialist" moreinfo-details="Visual design specialists design any visuals and digital designs needed" moreinfo-positions="2">More info</a>
+                <span class="available-positions">2 positions open</span>
+            </div>
+            <div class="customJob" style="display: none;">
+                <img src="images/Techlogo.png">
+                <h3 class="title-of-job">
+                    
+                </h3>
+                <div class="job-details">
+                    
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="${job.title}" moreinfo-details="${job.details}" moreinfo-positions="${job.positions}">More info</a>
+                <span class ="available-positions"></span>
+            </div>
+
+            <div class="customJob" style="display: none;">
+                <img src="images/Techlogo.png" alt="">
+                <h3 class="title-of-job">
+                    
+                </h3>
+                <div class="job-details">
+                    
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="${job.title}" moreinfo-details="${job.details}" moreinfo-positions="${job.positions}">More info</a>
+                <span class ="available-positions"></span>
+            </div>
+            
+            <div class="customJob" style="display: none;">
+                <img src="images/Techlogo.png" alt="">
+                <h3 class="title-of-job">
+                    
+                </h3>
+                <div class="job-details">
+                    
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="${job.title}" moreinfo-details="${job.details}" moreinfo-positions="${job.positions}">More info</a>
+                <span class ="available-positions"></span>
+            </div>
+
+            <div class="customJob" style="display: none;">
+                <img src="images/Techlogo.png" alt="">
+                <h3 class="title-of-job">
+                    
+                </h3>
+                <div class="job-details">
+                    
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="${job.title}" moreinfo-details="${job.details}" moreinfo-positions="${job.positions}">More info</a>
+                <span class ="available-positions"></span>
+            </div>
+
+            <div class="customJob" style="display: none;">
+                <img src="images/Techlogo.png" alt="">
+                <h3 class="title-of-job">
+                    
+                </h3>
+                <div class="job-details">
+                    
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="${job.title}" moreinfo-details="${job.details}" moreinfo-positions="${job.positions}">More info</a>
+                <span class ="available-positions"></span>
+            </div>
+
+            <div class="customJob" style="display: none;">
+                <img src="images/Techlogo.png" alt="">
+                <h3 class="title-of-job">
+                    
+                </h3>
+                <div class="job-details">
+                    
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="${job.title}" moreinfo-details="${job.details}" moreinfo-positions="${job.positions}">More info</a>
+                <span class ="available-positions"></span>
+            </div>
+
+            <div class="customJob" style="display: none;">
+                <img src="images/Techlogo.png" alt="">
+                <h3 class="title-of-job">
+                    
+                </h3>
+                <div class="job-details">
+                    
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="${job.title}" moreinfo-details="${job.details}" moreinfo-positions="${job.positions}">More info</a>
+                <span class ="available-positions"></span>
+            </div>
+
+            <div class="customJob" style="display: none;">
+                <img src="images/Techlogo.png" alt="">
+                <h3 class="title-of-job">
+                    
+                </h3>
+                <div class="job-details">
+                    
+                </div>
+                <a th:href="@{/ApplyForPosting}" class="details-button" moreinfo-title="${job.title}" moreinfo-details="${job.details}" moreinfo-positions="${job.positions}">More info</a>
+                <span class ="available-positions"></span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/ApprovedPostings.js">  </script>
+    <script type="text/javascript" src="js/RemoveAndAddPostings.js">  </script>
+</body>
+</html>
